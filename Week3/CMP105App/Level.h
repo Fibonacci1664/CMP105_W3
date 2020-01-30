@@ -22,8 +22,14 @@ private:
 	void moveCircle(float deltaTime);
 	void movePlayer(float deltaTime);
 	void alterSpeed();
+	void drawTrail();
+	void checkCollisions();
+
+	sf::Vertex m_trail[200];
 
 	sf::CircleShape m_circle;
+	sf::CircleShape m_circle_2;
+	sf::CircleShape m_circle_3;
 	sf::CircleShape player;
 	sf::Text m_text;
 	sf::Font m_font;
